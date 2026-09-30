@@ -1,155 +1,110 @@
 /*******************************************/
-/*             JOURNEY.JS                  */
-/*     Datos para USER JOURNEY MAP         */   
-/*          [DIU] UX Toolkit v1.0 2019     */                        
+/*              JOURNEY.JS                 */
+/*       Datos para USER JOURNEY MAP       */
+/*          [DIU] UX Toolkit v1.0 2019     */
 /*          ver 1.1 26/Feb/2022            */
 /*******************************************/
-    
-/****  README:       */
-/****  v.1.1 Incluye nombre de tu grupo de prácticas (Grupo.ID), curso académico y enlace a github ***/
-/****  Modifica los datos para los Journey Map (uno para cada Persona)  */
-/****  Usa los 6 pasos y sigue las instrucciones */   
-/****  Las imagenes para  'Photo', 'feelX', 'imaX' están en carpeta ./photos **/
-/****  Si se usan nuevas imágenes se deben añadir a esa carpeta **/
-/****  Los valores de rating están entre 1..5 **/
-/****  recursos de imágenes:  https://www.vectorstock.com/royalty-free-vectors/vectors-by_zdeneksasek ***/
 
-
-
+/**** README:                                  */
+/**** Modifica los datos para los Journey Map  */
+/**** Uno para cada Persona                    */
+/**** Los valores de rating están entre 1..5  */
 
 angular.module("angular", [])
-	.controller("controller", ["$scope", function($scope) { 
-		$scope.Grupo_ID ="DIU1.ABCDEF";
-        $scope.Curso ="2021/22";
-        $scope.Github_ID ="https://github.com/mgea/UX-DIU-Toolkit";
-        
-		$scope.JourneyIndex = 0;
-        
-        $scope.Journeys = [
-			{		
-                
-                /*************************************/
-                /**** PRIMER USER JOURNEY MAP  *******/
-                /*** Cambiar datos             *******/
-                /*************************************/
-                
-				Id: 0,
-				Name: "Pedro",
-                Photo: "man.png",
-    
-                /*** PASO #1: INSPIRACION ***/ 
-                goal1: "quiere preparar un viaje con sus amigos en Semana Santa",
-                touch1: "agenda",
-                feel1: "4",
-                con1: "ver cuantos días puede tener libres para organizar lugar de viaje ",
-                ima1: "cartoon-planning.png",
-				
-                /*** PASO #2: DECICION ***/ 
-                goal2: "Busca en internet ofertas para esas fechas",
-                touch2: "Movil",
-                feel2: "2",
-                con2: "hay demasiada información y pierde mucho tiempo, no hay precios 'baratos'",
-                ima2: "cartoon-PCangry.png",
-                
-                /*** PASO #3: ACTUA ***/ 
-                
-                goal3: "Decide buscar un alojamiento rural  en plasencia, donde hay procesiones y parece que hará buen tiempo",
-                touch3: "móvil (el tiempo)",
-                feel3: "3",
-                con3: "Está preocupado por el tiempo y el desplazamiento (coche y aparcamiento)",
-                ima3: "cartoon-phone.png",
-                
-                /*** PASO #4: OBSERVA ***/ 
-                
-                goal4: "Los amigos le recomiendan una página para escoger alojamientos",
-                touch4: "ordenador",
-                feel4: "4",
-                con4: "Buscar opciones en el lugar que había seleccionado, viendo precios y distancias, tiene que ver si hay aparcamiento fácil",
-                ima4: "cartoon-PCtyping.png",
-                
-                 /*** PASO #5: ANALIZA ***/ 
-                
-                goal5: "Se encuentra 3 opciones que encajan en sus preferencias",
-                touch5: "móvil (whatsapp)",
-                feel5: "2",
-                con5: "Llama a sus amigos (whatsapp no responen) para ver cual es su preferencia, tienen que reservar rápido por los precios",
-                ima5: "cartoon-phoning.png",
-                
-                
-                /*** PASO #6: CONCLUSION ***/ 
-                
-                goal6: "Consigue reservar, otro año se encarga otro!",
-                touch6: "ordenador",
-                feel6: "3",
-                con6: "algunos amigos no confirmaron por lo que tuvo que seleccionar reserva con posibilidad de cancelación",
-                ima6: "cartoon-resting.png",
-                
-			},
-			{	
-                /*************************************/
-                /**** SEGUNDO USER JOURNEY MAP *******/
-                /***      Cambiar datos        *******/
-                /*************************************/
-                
-				Id: 1,
-				Name: "Monica Suarez",
-                Photo: "woman.png",
-                
-				 /*** PASO #1: INSPIRACION ***/ 
-                goal1: "Quiere preparar un viaje con su familia para Verano, tiene sólo 15 dias libres",
-                touch1: "agenda",
-                feel1: "5",
-                con1: "Quiere ir a un pais exotico pero que tenga atracciones para niños pequeños",
-                ima1: "cartoon-going.png",
-                
-                /*** PASO #2: DECICION ***/ 
-                goal2: "Ir a una agencia de viajes, y decirle sus preferencias y planes",
-                touch2: "Servicio (agencia)",
-                feel2: "4",
-                con2: "Tiene que desplazarse a agencia, explica su intenciones, le llamaran porque no hay nada interesante",
-                ima2: "cartoon-teamthinking.png",
-                
-                /*** PASO #3: ACTUA ***/ 
-                
-                goal3: "Le llaman a los pocos días con un viaje que no le convence",
-                touch3: "Móvil (llamada)",
-                feel3: "2",
-                con3: "Piensa que ha perdido el tiempo",
-                ima3: "cartoon-phoningangry.png",
-                
-                /*** PASO #4: OBSERVA ***/ 
-                
-                goal4: "Busca una oferta en hoteles cerca de playa y con parque atracciones",
-                touch4: "Móvil (webapp)",
-                feel4: "2",
-                con4: "No hay mucha información del alojamiento ni de lo que hay alrededor, aunque el precio está bien, va por la calle por lo que está incómoda",
-                ima4: "cartoon-phone-street.png",
-                
-                 /*** PASO #5: ANALIZA ***/ 
-                
-                goal5: "Reserva a traves de la aplicación ",
-                touch5: "Móvil (webapp)",
-                feel5: "3",
-                con5: "Le pide muchos datos y le resulta incómodo completar formulario",
-                ima5: "cartoon-phone-sitting.png",
+.controller("controller", ["$scope", function($scope) {
 
-                
-                /*** PASO #6: CONCLUSION ***/ 
-                
-                goal6: "Consiguie reservar para vacaciones pero no era lo que tenía en mente",
-                touch6: "Ordenador (reserva OK)",
-                feel6: "2",
-                con6: "Tendrá que buscar más información del lugar para ver que actividades ofrece y donde aparacar!",
-                ima6: "cartoon-PChard.png",
-                
-                
-                
-			}
-		];
-        
-		$scope.model = $scope.Journeys[0];
+    $scope.Grupo_ID = "DAW2.GRUPO01";
+    $scope.Curso = "2026/27";
+    $scope.Github_ID = "https://github.com/tu-grupo/proyecto";
 
-	}])
+    $scope.JourneyIndex = 0;
 
+    $scope.Journeys = [
+    {
+        Id: 0,
+        Name: "Cristina López",
+        Photo: "woman.png",
 
+        goal1: "Necesita comprobar si la aplicación web funciona correctamente.",
+        touch1: "Ordenador del trabajo",
+        feel1: "4",
+        con1: "Ha recibido un aviso de un usuario y quiere revisar rápidamente el estado del sistema.",
+        ima1: "cartoon-PCtyping.png",
 
+        goal2: "Decide entrar en el panel de monitorización para consultar los datos.",
+        touch2: "Navegador web",
+        feel2: "3",
+        con2: "No sabe en qué dashboard se encuentra la información que necesita.",
+        ima2: "cartoon-planning.png",
+
+        goal3: "Busca un dashboard con métricas de rendimiento y disponibilidad.",
+        touch3: "Dashboard web",
+        feel3: "3",
+        con3: "Hay muchos gráficos y necesita distinguir rápidamente los datos importantes.",
+        ima3: "cartoon-PCtyping.png",
+
+        goal4: "Observa que el tiempo de respuesta del servidor ha aumentado.",
+        touch4: "Gráficos y métricas",
+        feel4: "2",
+        con4: "La información aparece dividida en varios paneles y le cuesta encontrar el origen del problema.",
+        ima4: "cartoon-PCangry.png",
+
+        goal5: "Filtra los datos por fecha, servicio y nivel de error.",
+        touch5: "Filtros y buscador",
+        feel5: "4",
+        con5: "Los filtros le permiten reducir la información y localizar los errores producidos durante la última hora.",
+        ima5: "cartoon-phone.png",
+
+        goal6: "Identifica el problema y comparte el dashboard con su equipo.",
+        touch6: "Dashboard y enlace compartido",
+        feel6: "5",
+        con6: "Consigue encontrar la causa del problema, aunque le gustaría recibir alertas más claras automáticamente.",
+        ima6: "cartoon-resting.png"
+    },
+
+    {
+        Id: 1,
+        Name: "Carlos Rodríguez",
+        Photo: "man.png",
+
+        goal1: "Quiere revisar una alerta sobre un posible fallo de seguridad.",
+        touch1: "Notificación por correo",
+        feel1: "3",
+        con1: "La alerta contiene demasiada información y necesita comprobar si es realmente importante.",
+        ima1: "cartoon-phoning.png",
+
+        goal2: "Decide acceder a la plataforma para investigar los registros del sistema.",
+        touch2: "Ordenador y navegador web",
+        feel2: "4",
+        con2: "Necesita acceder rápidamente y encontrar el servicio relacionado con la alerta.",
+        ima2: "cartoon-PCtyping.png",
+
+        goal3: "Busca los logs relacionados con el usuario, la hora y el servicio afectado.",
+        touch3: "Buscador de logs",
+        feel3: "3",
+        con3: "No recuerda exactamente qué filtros debe utilizar para obtener resultados útiles.",
+        ima3: "cartoon-planning.png",
+
+        goal4: "Observa varios errores repetidos en los registros.",
+        touch4: "Tabla de logs",
+        feel4: "2",
+        con4: "Hay muchos resultados y algunos mensajes técnicos son difíciles de interpretar.",
+        ima4: "cartoon-PCangry.png",
+
+        goal5: "Compara las métricas del servidor con los registros de actividad.",
+        touch5: "Panel de análisis",
+        feel5: "4",
+        con5: "La comparación entre gráficos y logs le ayuda a confirmar que existe un problema.",
+        ima5: "cartoon-teamthinking.png",
+
+        goal6: "Confirma la incidencia, crea una alerta y comunica el problema al equipo.",
+        touch6: "Alertas y panel compartido",
+        feel6: "5",
+        con6: "Resuelve la investigación, pero necesita configurar las alertas para que sean más fáciles de entender.",
+        ima6: "cartoon-resting.png"
+    }
+];
+
+    $scope.model = $scope.Journeys[0];
+
+}]);        
