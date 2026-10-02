@@ -64,16 +64,16 @@ angular.module("angular", [])
     Bio: "Laura tiene 28 años y estudia Diseño Gráfico mientras trabaja algunas tardes en una tienda. Utiliza el móvil para organizar sus actividades, consultar información y comunicarse con otras personas. Valora especialmente las interfaces claras, los textos breves y los procesos rápidos. Si una aplicación es complicada o tarda demasiado en cargar, deja de utilizarla.",
 
     Tech: [
-        { Name: "TIC/Internet", Value: 5 },
+        { Name: "TIC/Internet", Value: 1},
         { Name: "Móvil", Value: 5 },
-        { Name: "RRSS", Value: 4 },
+        { Name: "RRSS", Value: 5 },
         { Name: "Software", Value: 3 }
     ],
 
     Contextos: "Utiliza la aplicación principalmente desde el móvil, durante sus desplazamientos o cuando tiene poco tiempo disponible.",
 
     PreferredChannels: [
-        { Name: "Publicidad Tradicional", Value: 1 },
+        { Name: "Publicidad Tradicional", Value: 5 },
         { Name: "Online & Social Media", Value: 5 },
         { Name: "Recomendaciones & sugerencias", Value: 4 },
         { Name: "Persona de confianza (amigos, boca a boca)", Value: 3 }
