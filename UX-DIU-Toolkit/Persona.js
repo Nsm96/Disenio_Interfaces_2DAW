@@ -32,51 +32,52 @@ angular.module("angular", [])
                 
                 
 
+
     Id: 0,
-    Name: "Cristina López",
+    Name: "Cristina López", // Corregido el nombre para que coincida con la bio
     Photo: "woman.png",
-    Quote: "La tecnología debe hacerme la vida más fácil.",
-    Age:  28,
-    Occupation: "Estudiante de Diseño Gráfico",
+    Quote: "Me encanta trastear con mi servidor en casa, pero quiero que monitorizarlo sea visual y no un dolor de cabeza.",
+    Age: 28,
+    Occupation: "Técnica de Soporte IT (Helpdesk / Nivel 1)",
     Family: "Vive con su pareja y tiene un perro",
     Location: "Granada",
-    Character: "Creativa, organizada y algo impaciente cuando una aplicación no es intuitiva.",
+    Character: "Curiosa, autodidacta y práctica. Le gusta aprender, pero se frustra si una herramienta requiere demasiada configuración inicial.",
 
     PersonalityTraits: [
-        { Name: "Introvertido/reservado Vs Extrovertido/activo", Value: 3 },
-        { Name: "Realista/práctico Vs Intuición/imaginativo", Value: 5 },
-        { Name: "Racional/analítico Vs Emocional/impulsivo", Value: 3 },
-        { Name: "Flemático/apático Vs Colérico/visceral", Value: 2 }
+        { Name: "Introvertido/reservado Vs Extrovertido/activo", Value: 2 }, // Más orientada al trabajo individual/reservada
+        { Name: "Realista/práctico Vs Intuición/imaginativo", Value: 2 }, // Muy práctica y realista
+        { Name: "Racional/analítico Vs Emocional/impulsivo", Value: 1 }, // Altamente analítica
+        { Name: "Flemático/apático Vs Colérico/visceral", Value: 3 }
     ],
 
     Goals: [
-        "Encontrar rápidamente la información que necesita.",
-        "Utilizar aplicaciones sencillas y fáciles de entender.",
-        "Ahorrar tiempo en sus tareas diarias."
+        "Ver el estado de la CPU, RAM y red de su servidor casero de un solo vistazo.",
+        "Recibir alertas sencillas si alguno de sus servicios (Plex, Nextcloud, Pi-hole) se cae.",
+        "Tener un panel de control que parezca profesional ('tipo hacker') sin tener que aprender lenguajes de consulta complejos."
     ],
 
     Frustrations: [
-        "Las aplicaciones con demasiados menús y opciones.",
-        "Tener que registrarse para realizar acciones sencillas.",
-        "No encontrar ayuda cuando tiene un problema."
+        "Tener que escribir consultas de código complejas (ej. PromQL) solo para ver un gráfico básico.",
+        "Herramientas de monitorización que consumen demasiados recursos en su pequeño servidor.",
+        "La falta de plantillas o dashboards preconfigurados para servicios comunes."
     ],
 
-    Bio: "Laura tiene 28 años y estudia Diseño Gráfico mientras trabaja algunas tardes en una tienda. Utiliza el móvil para organizar sus actividades, consultar información y comunicarse con otras personas. Valora especialmente las interfaces claras, los textos breves y los procesos rápidos. Si una aplicación es complicada o tarda demasiado en cargar, deja de utilizarla.",
+    Bio: "Cristina tiene 28 años y trabaja como técnica informática de primer nivel. Por afición, tiene un mini-PC en casa donde aloja sus propios servicios mediante Docker (un media server, bloqueador de anuncios, nube propia). Aunque tiene conocimientos técnicos, no es experta en DevOps. Quiere usar la plataforma por curiosidad, para sentir que tiene el control de su 'homelab' y ver qué pasa en su red, pero busca algo más plug-and-play que las soluciones empresariales puras.",
 
     Tech: [
-        { Name: "TIC/Internet", Value: 1},
-        { Name: "Móvil", Value: 5 },
-        { Name: "RRSS", Value: 5 },
-        { Name: "Software", Value: 3 }
+        { Name: "TIC/Internet", Value: 5 }, // Nivel alto al ser su profesión y hobby
+        { Name: "Móvil", Value: 4 },
+        { Name: "RRSS", Value: 3 }, // Menos redes sociales convencionales, más foros/comunidades
+        { Name: "Software", Value: 4 }
     ],
 
-    Contextos: "Utiliza la aplicación principalmente desde el móvil, durante sus desplazamientos o cuando tiene poco tiempo disponible.",
+    Contextos: "Utiliza la aplicación dejándola abierta en un segundo monitor mientras está en el ordenador de casa, y la revisa desde el móvil si nota que el WiFi o sus servicios van lentos.",
 
     PreferredChannels: [
-        { Name: "Publicidad Tradicional", Value: 5 },
-        { Name: "Online & Social Media", Value: 5 },
-        { Name: "Recomendaciones & sugerencias", Value: 4 },
-        { Name: "Persona de confianza (amigos, boca a boca)", Value: 3 }
+        { Name: "Comunidades técnicas (Reddit, foros, GitHub)", Value: 5 },
+        { Name: "YouTube (Canales de tecnología y homelab)", Value: 4 },
+        { Name: "Recomendaciones & sugerencias (Boca a boca de colegas IT)", Value: 4 },
+        { Name: "Publicidad Tradicional", Value: 1 } // Muy poco receptiva a publicidad tradicional
     ]
 },
 
