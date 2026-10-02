@@ -78,7 +78,7 @@ angular.module("angular", [])
         { Name: "YouTube (Canales de tecnología y homelab)", Value: 4 },
         { Name: "Recomendaciones & sugerencias (Boca a boca de colegas IT)", Value: 4 },
         { Name: "Publicidad Tradicional", Value: 1 }
-},
+        ]},
 
 {
     /*************************************/
