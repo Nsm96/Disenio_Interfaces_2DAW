@@ -34,7 +34,7 @@ angular.module("angular", [])
 
 
     Id: 0,
-    Name: "Cristina López", // Corregido el nombre para que coincida con la bio
+    Name: "Cristina López",
     Photo: "woman.png",
     Quote: "Me encanta trastear con mi servidor en casa, pero quiero que monitorizarlo sea visual y no un dolor de cabeza.",
     Age: 28,
@@ -44,9 +44,9 @@ angular.module("angular", [])
     Character: "Curiosa, autodidacta y práctica. Le gusta aprender, pero se frustra si una herramienta requiere demasiada configuración inicial.",
 
     PersonalityTraits: [
-        { Name: "Introvertido/reservado Vs Extrovertido/activo", Value: 2 }, // Más orientada al trabajo individual/reservada
-        { Name: "Realista/práctico Vs Intuición/imaginativo", Value: 2 }, // Muy práctica y realista
-        { Name: "Racional/analítico Vs Emocional/impulsivo", Value: 1 }, // Altamente analítica
+        { Name: "Introvertido/reservado Vs Extrovertido/activo", Value: 2 },
+        { Name: "Realista/práctico Vs Intuición/imaginativo", Value: 2 },
+        { Name: "Racional/analítico Vs Emocional/impulsivo", Value: 1 },
         { Name: "Flemático/apático Vs Colérico/visceral", Value: 3 }
     ],
 
@@ -65,9 +65,9 @@ angular.module("angular", [])
     Bio: "Cristina tiene 28 años y trabaja como técnica informática de primer nivel. Por afición, tiene un mini-PC en casa donde aloja sus propios servicios mediante Docker (un media server, bloqueador de anuncios, nube propia). Aunque tiene conocimientos técnicos, no es experta en DevOps. Quiere usar la plataforma por curiosidad, para sentir que tiene el control de su 'homelab' y ver qué pasa en su red, pero busca algo más plug-and-play que las soluciones empresariales puras.",
 
     Tech: [
-        { Name: "TIC/Internet", Value: 5 }, // Nivel alto al ser su profesión y hobby
+        { Name: "TIC/Internet", Value: 5 },
         { Name: "Móvil", Value: 4 },
-        { Name: "RRSS", Value: 3 }, // Menos redes sociales convencionales, más foros/comunidades
+        { Name: "RRSS", Value: 3 },
         { Name: "Software", Value: 4 }
     ],
 
@@ -77,8 +77,7 @@ angular.module("angular", [])
         { Name: "Comunidades técnicas (Reddit, foros, GitHub)", Value: 5 },
         { Name: "YouTube (Canales de tecnología y homelab)", Value: 4 },
         { Name: "Recomendaciones & sugerencias (Boca a boca de colegas IT)", Value: 4 },
-        { Name: "Publicidad Tradicional", Value: 1 } // Muy poco receptiva a publicidad tradicional
-    ]
+        { Name: "Publicidad Tradicional", Value: 1 }
 },
 
 {
