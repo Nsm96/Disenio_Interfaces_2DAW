@@ -19,100 +19,103 @@ angular.module("angular", []).controller("controller", [
 
     $scope.JourneyIndex = 0;
 
-    $scope.Journeys = [
-      {
-        Id: 0,
-        Name: "Cristina López",
-        Photo: "woman.png",
-
-        goal1:
-          "Quiere comprobar de forma sencilla si sus servicios caseros funcionan correctamente.",
-        touch1: "Panel de monitorización",
-        feel1: "3",
-        con1: "Nota que su servidor va más lento y quiere comprobar si el problema está en la CPU, la memoria o la red.",
-        ima1: "cartoon-PCtyping.png",
-
-        goal2: "Decide entrar en la plataforma para consultar el estado general de la aplicación.",
-        touch2: "Ordenador y navegador web",
-        feel2: "4",
-        con2: "Busca una pantalla inicial donde pueda ver rápidamente si existe algún problema.",
-        ima2: "cartoon-PCtyping.png",
-
-        goal3: "Abre el dashboard principal de la aplicación.",
-        touch3: "Dashboard principal",
-        feel3: "4",
-        con3: "El dashboard muestra varios gráficos, pero necesita identificar cuáles son los más importantes.",
-        ima3: "cartoon-planning.png",
-
-        goal4:
-          "Consulta los indicadores básicos de disponibilidad, errores y tiempo de respuesta.",
-        touch4: "Gráficos sencillos",
-        feel4: "3",
-        con4: "Observa que uno de los indicadores aparece en rojo y que el tiempo de respuesta es más alto de lo normal.",
-        ima4: "cartoon-phone.png",
-
-        goal5:
-          "Selecciona un periodo de tiempo para comprobar cuándo empezó el problema.",
-        touch5: "Selector de fecha",
-        feel5: "4",
-        con5: "La opción de cambiar el periodo le ayuda a comparar el estado actual con el de las horas anteriores.",
-        ima5: "cartoon-PCtyping.png",
-
-        goal6:
-          "Comparte la información con su equipo para que puedan revisar el problema.",
-        touch6: "Botón de compartir",
-        feel6: "5",
-        con6: "Consigue comunicar la situación sin tener que interpretar logs ni configurar opciones avanzadas.",
-        ima6: "cartoon-resting.png",
-      },
-
-      {
-        Id: 1,
-        Name: "Rodrigo García",
-        Photo: "man.png",
-
-        goal1: "Quiere revisar una alerta sobre un posible fallo de seguridad.",
-        touch1: "Notificación por correo",
-        feel1: "3",
-        con1: "La alerta contiene demasiada información y necesita comprobar si es realmente importante.",
-        ima1: "cartoon-phoning.png",
-
-        goal2:
-          "Decide acceder a la plataforma para investigar los registros del sistema.",
-        touch2: "Ordenador y navegador web",
-        feel2: "4",
-        con2: "Necesita acceder rápidamente y encontrar el servicio relacionado con la alerta.",
-        ima2: "cartoon-PCtyping.png",
-
-        goal3:
-          "Busca los logs relacionados con el usuario, la hora y el servicio afectado.",
-        touch3: "Buscador de logs",
-        feel3: "3",
-        con3: "No recuerda exactamente qué filtros debe utilizar para obtener resultados útiles.",
-        ima3: "cartoon-planning.png",
-
-        goal4: "Observa varios errores repetidos en los registros.",
-        touch4: "Tabla de logs",
-        feel4: "2",
-        con4: "Hay muchos resultados y algunos mensajes técnicos son difíciles de interpretar.",
-        ima4: "cartoon-PCangry.png",
-
-        goal5:
-          "Compara las métricas del servidor con los registros de actividad.",
-        touch5: "Panel de análisis",
-        feel5: "4",
-        con5: "La comparación entre gráficos y logs le ayuda a confirmar que existe un problema.",
-        ima5: "cartoon-teamthinking.png",
-
-        goal6:
-          "Confirma la incidencia, crea una alerta y comunica el problema al equipo.",
-        touch6: "Alertas y panel compartido",
-        feel6: "5",
-        con6: "Resuelve la investigación, pero necesita configurar las alertas para que sean más fáciles de entender.",
-        ima6: "cartoon-resting.png",
-      },
+$scope.Journeys = [
+        {
+            /**** JOURNEY: ELENA (COLECCIONISTA) ****/
+            Id: 0,
+            Name: "Elena Navarro",
+            Photo: "woman.png",
+            
+            /*** PASO #1: INSPIRACIÓN ***/
+            goal1: "Quiere ir a conseguir una montura rara, pero no recuerda con qué personajes ya lo ha intentado esta semana.",
+            touch1: "Memoria / Dudas en el juego",
+            feel1: "3",
+            con1: "Siente frustración porque cree que ya fue a esa mazmorra, pero no está 100% segura.",
+            ima1: "cartoon-teamthinking.png",
+            
+            /*** PASO #2: DECISIÓN ***/
+            goal2: "Decide abrir la nueva web de registro para comprobar el estado de sus alters.",
+            touch2: "Ordenador y navegador web",
+            feel2: "4",
+            con2: "Busca un diseño limpio donde pueda ver rápidamente los 'checks' verdes o rojos.",
+            ima2: "cartoon-PCtyping.png",
+            
+            /*** PASO #3: ACTÚA ***/
+            goal3: "Navega hasta la pestaña de 'Monturas y Farmeo Semanal'.",
+            touch3: "Menú de navegación web",
+            feel3: "5",
+            con3: "Encuentra la sección fácilmente sin perderse entre estadísticas complejas que no le interesan.",
+            ima3: "cartoon-resting.png",
+            
+            /*** PASO #4: OBSERVA ***/
+            goal4: "Ve una lista visual con sus 5 personajes y nota que a dos de ellos aún les falta hacer esa mazmorra.",
+            touch4: "Dashboard de actividades",
+            feel4: "4",
+            con4: "La tabla es clara y utiliza iconos del juego, lo que le ayuda a identificar todo de un vistazo.",
+            ima4: "cartoon-planning.png",
+            
+            /*** PASO #5: ANALIZA ***/
+            goal5: "Entra al juego, completa la mazmorra con su Paladín y marca la casilla en la web.",
+            touch5: "Botón de 'Completado' en la web",
+            feel5: "5",
+            con5: "Le produce mucha satisfacción hacer clic en el check y ver cómo la barra de progreso se llena.",
+            ima5: "cartoon-phone.png",
+            
+            /*** PASO #6: CONCLUSIÓN ***/
+            goal6: "Ya no tiene que anotar nada en libretas; confía en la herramienta para su progreso.",
+            touch6: "Cierre de tarea",
+            feel6: "5",
+            con6: "Se relaja sabiendo que tiene su 'To-Do' de WoW bajo control para el resto de la semana.",
+            ima6: "cartoon-resting.png"
+        },
+        {
+            /**** JOURNEY: HUGO (HARDCORE) ****/
+            Id: 1,
+            Name: "Hugo Silva",
+            Photo: "man.png",
+            
+            /*** PASO #1: INSPIRACIÓN ***/
+            goal1: "Es martes por la noche y quiere asegurarse de que sus 4 personajes tienen todo listo para el reinicio de mañana.",
+            touch1: "Revisión rápida mental",
+            feel1: "3",
+            con1: "Tiene la sensación de que a su personaje 'Healer' le falta hacer una Mazmorra Mítica+.",
+            ima1: "cartoon-teamthinking.png",
+            
+            /*** PASO #2: DECISIÓN ***/
+            goal2: "Abre la aplicación web y va directo a su panel global de personajes.",
+            touch2: "Ordenador y navegador web",
+            feel2: "4",
+            con2: "Espera que la web cargue rápido y le dé los datos sin tener que hacer demasiados clics.",
+            ima2: "cartoon-PCtyping.png",
+            
+            /*** PASO #3: ACTÚA ***/
+            goal3: "Filtra la vista para ver solo el progreso de 'La Gran Cámara' (recompensas semanales).",
+            touch3: "Filtros de búsqueda",
+            feel3: "4",
+            con3: "Agradece que existan filtros avanzados para ir al grano.",
+            ima3: "cartoon-planning.png",
+            
+            /*** PASO #4: OBSERVA ***/
+            goal4: "Se da cuenta de que, efectivamente, a su Healer le falta 1 actividad y a su Tanque le faltan 2.",
+            touch4: "Tabla de progreso semanal",
+            feel4: "2",
+            con4: "Se agobia un poco al ver que tiene más trabajo del que pensaba, pero agradece haberlo detectado a tiempo.",
+            ima4: "cartoon-PCangry.png",
+            
+            /*** PASO #5: ANALIZA ***/
+            goal5: "Calcula el tiempo que le tomará jugar con ambos personajes antes de irse a dormir.",
+            touch5: "Dashboard",
+            feel5: "3",
+            con5: "Prioriza terminar las tareas del Healer usando la web como guía.",
+            ima5: "cartoon-PCtyping.png",
+            
+            /*** PASO #6: CONCLUSIÓN ***/
+            goal6: "Termina las actividades, las marca como completadas y se va a dormir tranquilo.",
+            touch6: "Botones de estado",
+            feel6: "5",
+            con6: "Siente que la aplicación le ha salvado de perder equipo valioso para su hermandad.",
+            ima6: "cartoon-resting.png"
+        }
     ];
-
     $scope.model = $scope.Journeys[0];
-  },
-]);
+}]);
